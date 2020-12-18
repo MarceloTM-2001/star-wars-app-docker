@@ -27,3 +27,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: docker build . -t marcelotm-2001/star-wars-web-server-3:latest
+    - run: docker login -u machotm001 -p ${{secrets.DOCKERHUBPASS }}
+    - run: docker push marcelotm-2001/star-wars-web-server-3:latest
