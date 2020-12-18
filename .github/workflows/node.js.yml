@@ -26,4 +26,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-    - run: docker build . -t MarceloTM-2001/star-wars-web-server-3:latest
+    - run: docker build . -t marcelotm-2001/star-wars-web-server-3:latest
